@@ -10,7 +10,7 @@ pinMode(led, OUTPUT);
 void loop() {
   // put your main code here, to run repeatedly:
 int val = analogRead(analog);
-if (val <= 150 && val <= 1023){ 
+if (val >= 120 && val <= 1023){ 
   digitalWrite(led, LOW);
 }
 else { 
