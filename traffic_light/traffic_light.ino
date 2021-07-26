@@ -11,14 +11,14 @@ pinMode(green, OUTPUT);
 
 void loop() {
   // put your main code here, to run repeatedly:
-//turn red light on
+//turn red light on for 19.5 s
 activateLED(red, 19500);
 
-//turn green on
+//turn green on for 20 s
 activateLED(green, 20000);
 
 //turn yellow on momentarily
-activateLED(yellow, 10000);
+activateLED(yellow, 9000);
 }
 
 void activateLED(int color, int time) {
