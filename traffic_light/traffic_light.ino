@@ -11,20 +11,21 @@ pinMode(green, OUTPUT);
 
 void loop() {
   // put your main code here, to run repeatedly:
-digitalWrite(red, HIGH); //turn red light on
-delay(19500); // remains on for 19.5 s
-digitalWrite(red, LOW); //turn red light off
+//turn red light on
+activateLED(red, 19500);
 
 //turn green on
-digitalWrite(green, HIGH);
-delay(20000);
-digitalWrite(green, LOW);
+activateLED(green, 20000);
 
 //turn yellow on momentarily
-digitalWrite(yellow, HIGH);
-delay(10000);
-digitalWrite(yellow,LOW);
+activateLED(yellow, 10000);
+}
 
-
+void activateLED(int color, int time) {
+//function to determine which LED is switched on 
+//the duration for which it is on  
+digitalWrite(color, HIGH);
+delay(time);
+digitalWrite(color, LOW);
 
 }
